@@ -1,0 +1,18 @@
+{
+  "name": "toto-ms-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/secret-manager": "^4.1.3",
+    "google-auth-library": "^9.0.0",
+    "jsonwebtoken": "^9.0.1",
+    "moment-timezone": "^0.5.41",
+    "mongodb": "^4.4.0",
+    "request": "^2.88.2",
+    "toto-api-controller": "^10.1.0",
+    "toto-logger": "^5.0.0"
+  }
+}
