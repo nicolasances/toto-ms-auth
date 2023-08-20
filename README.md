@@ -24,6 +24,7 @@ Github must contain the following secrets:
 | ------------------------- | ---- |
 | `GCP_PID`                 | The id of the GCP project | 
 | `MICROSERVICE_ACCOUNT`    | The email of the GCP Service Account that has been created and associated with this service | 
+| `SERVICE_ACCOUNT`         | The content of the json file containing the CI-CD service account information. That can be extracted from GCP, under Service Accounts, by creating and downloading a key |
 
 ### GCP Secrets
 The service needs the following secrets to be configured in GCP (in Secret Manager). 
