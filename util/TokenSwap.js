@@ -1,7 +1,7 @@
 
 const { verifyGoogleToken } = require('./VerifyGoogleToken')
 const { generateTotoJWTToken } = require('./GenerateTotoJWTToken');
-const context = require('./Context')
+const { context } = require('./Context')
 
 /**
  * Exchanges a valid Google Id Token for a Toto Id Token

@@ -16,6 +16,8 @@ class Config {
 
         console.log("Loading configuration...");
 
+        this.googleAuthorizedClientIDs = {};
+
         return new Promise((success, failure) => {
 
             let promises = [];
@@ -59,7 +61,10 @@ class Config {
 
     getAuthorizedClientIDs() {
         return {
-            "google": this.googleAuthorizedClientIDs,
+            "google": {
+                ...this.googleAuthorizedClientIDs,
+                anyClient: this.googleAuthorizedClientIDs.totoMoneyWeb
+            }
         }
     }
 

@@ -1,7 +1,7 @@
 
 const { context } = require('./Context');
 
-exports.extractTokenFromHeader = (headers) => {
+exports.extractTokenFromHeader = (httpHeaders) => {
 
     const cid = context.getCid();
     const logger = context.getLogger();
