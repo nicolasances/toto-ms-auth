@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const {config} = require('../config');
 
-exports.verifyAndDecode = (token) => {
+export function verifyAndDecode(token: string) {
 
     return jwt.verify(token, config.getJWTSigningKey());
 

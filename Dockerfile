@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:18-alpine
 
 RUN mkdir /app
 
@@ -6,5 +6,8 @@ COPY . /app/
 
 WORKDIR /app
 RUN npm install
+RUN npm run build
 
-CMD node /app/index.js
+RUN chmod -R 777 /app
+
+CMD npm run start
