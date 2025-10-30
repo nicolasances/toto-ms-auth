@@ -16,7 +16,7 @@ export class VerifyToken implements TotoDelegate {
         if (!token) throw new ValidationError(400, "No Token provided in Authorization Header");
 
         // 2. Verify and unpack the JWT token
-        const unpackedToken = verifyAndDecode(token);
+        const unpackedToken = verifyAndDecode(token, execContext);
 
         if (!unpackedToken) {
 
