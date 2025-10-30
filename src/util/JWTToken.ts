@@ -1,8 +1,12 @@
+import { ExecutionContext } from "toto-api-controller";
+import { ControllerConfig } from "../config";
+
 const jwt = require('jsonwebtoken');
-const {config} = require('../config');
 
-export function verifyAndDecode(token: string) {
+export function verifyAndDecode(token: string, execContext: ExecutionContext) {
 
-    return jwt.verify(token, config.getJWTSigningKey());
+    const config = execContext.config as ControllerConfig;
+
+    return jwt.verify(token, config.getSigningKey());
 
 }
