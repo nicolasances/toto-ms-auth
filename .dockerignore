@@ -1,0 +1,8 @@
+node_modules
+build
+.git
+.github
+test
+.env
+# Written by the CI workflow (service account key): must never end up in the image
+credentials.json
