@@ -1,6 +1,6 @@
 {
   "name": "toto-ms-auth",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Toto Auth microservice: exchanges Google ID tokens for Toto tokens and verifies Toto tokens",
   "main": "build/index.js",
   "scripts": {
